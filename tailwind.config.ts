@@ -16,6 +16,15 @@ const config: Config = {
         sans: ["var(--font-body)"],
         heading: ["var(--font-heading)"],
       },
+      keyframes: {
+        scroll: {
+          '0%': { transform: 'translateX(0)' },
+          '100%': { transform: 'translateX(-50%)' },
+        },
+      },
+      animation: {
+        scroll: 'scroll 30s linear infinite',
+      },
     },
   },
   plugins: [],
